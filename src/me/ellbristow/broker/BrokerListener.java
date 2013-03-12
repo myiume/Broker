@@ -594,6 +594,7 @@ public class BrokerListener implements Listener {
                         String buyerName = (String)buyOrder.get("playerName");
                         double price = Double.parseDouble(buyOrder.get("price").toString());
                         int quant = Integer.parseInt(buyOrder.get("quant").toString());
+                        int perItems = Integer.parseInt(buyOrder.get("perItems").toString());
                         
                         int thisSale = 0;
                         ItemStack boughtStack = stack.clone();
